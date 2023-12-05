@@ -20,6 +20,7 @@
 }
 
 /* Logo Border Animation */
+/* Adapted and modified from https://codepen.io/ainalem/pen/xxZQqyv */
 .gradient-border {
   --border-width: 3px;
 
@@ -102,6 +103,7 @@ nav {
   animation: cursor 1s step-start infinite, 
     text 5s steps(18) alternate infinite;
     background-color: #b7d7fc;
+    font-weight: bold;
 }
 
 @keyframes cursor {
@@ -243,12 +245,32 @@ justify-content: center;
     height: 100px;
 }
 
+.pet-container{
+  margin: 30px 20px 0px 20px;
+  padding: 30px 20px 20px 20px;;
+}
+
 div.pet_1 h1 {
 text-align: center;
 }
+
+div.pet-1 h2{
+  margin: 0px 0px 20px 0px;
+  padding: 0px;
+}
+
 div.pet-8 h3 {
 text-decoration: underline;
     }
+
+#pets ul {
+    font-size: 27px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+    line-height: 2.0;
+}
 
 .pet-1,.pet-2,.pet-3,.pet-4,.pet-5,.pet-6,.pet-7,.pet-8{
     max-width: 320px;
@@ -263,10 +285,14 @@ text-decoration: underline;
 }
 
 .pet-1 img{
-    border: solid 5px black;
-    border-radius: 20px;
-    width: 100%;
-    object-fit: cover;
+  max-width: 90%;
+  max-height: 90%;
+  min-width: 90%;
+  min-height: 90%;
+  margin: 10px;
+  border-radius: 20px;
+  border: solid 5px black;
+  object-fit: cover;
 }
 
 .pet-4 img, .pet-5 img,.pet-6 video, .pet-6 img,.pet-7 img{
@@ -284,12 +310,17 @@ text-decoration: underline;
     text-align: center;
     grid-area: 1/1/span 1/span all;
 }
+
 .pet-2{
     text-align: center;
     grid-area: 2/1/span 1/span all;
+    margin: 20px 0px 20px 0px;
+    padding-bottom: 40px;
 }
-.pet-3{
+.pet-3 h3{
     text-decoration: underline;
+    font-weight: bold;
+    margin: 0px 0px 20px 0px;
     grid-area: 3/1/span 1/span all;
 }
 .pet-4{
@@ -307,6 +338,16 @@ text-decoration: underline;
 .pet-8{
     text-align: center;
     grid-area: 6/1/span 1/span all;
+    margin: 10px 20px 40px 20px;
+    row-gap: 30px;
+    padding-top: 20px;
+    padding-bottom: 60px;
+}
+
+.pet-8 h3{
+    text-decoration: underline;
+    font-weight: bold;
+    margin: 0px 0px px 0px;
 }
 
 /* RECIPES STYLING */
@@ -325,6 +366,7 @@ text-decoration: underline;
 .recipe-1{
     grid-area: 1/1/1/span 3;
     text-align: center;
+    padding: 30px 10px 30px 10px;
 }
 .recipe-2{
     grid-area: 2/1/span 1/span all;
@@ -334,15 +376,25 @@ text-decoration: underline;
 .recipe-3{
     grid-area: 3/1/span 1/span all;
     margin: 0 auto;
+    margin: 30px 0px 30px 0px;
+    padding: 30px 10px 30px 10px;
 }
 .recipe-4{
     grid-area: 4/1/span 1/span all;
-    padding: 0 10px;
+    padding: 30px 10px 30px 10px;
+    margin: 30px 0px 30px 0px;
 }
 .recipe-5{
     grid-area: 5/1/span 1/span all;
     text-align: center;
     text-decoration: underline;
+}
+
+.recipe-5 h3{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  font-weight: bold;
 }
 .recipe-6{
     grid-area: 6/1/span 1/span all;
@@ -352,16 +404,30 @@ text-decoration: underline;
     grid-area: 7/1/span 1/span all;
     text-align: center;
     text-decoration: underline;
-
 }
+
+.recipe-7 h3{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-top: 20px;
+font-weight: bold;
+}
+
 .recipe-8{
     grid-area: 8/1/span 1/span all;
-
 }
+
 .recipe-9{
     grid-area: 9/1/span 1/span all;
     text-align: center;
     text-decoration: underline;
+}
+
+.recipe-9 h3{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  font-weight: bold;
 }
 .recipe-10{
     grid-area: 10/1/span 1/span all;
@@ -473,6 +539,12 @@ h1 {
     text-align: center;
 }
 
+.travel-1 h2{
+    margin: 0px 0px 20px 0px;
+    padding: 0px;
+    font-weight: bold;
+}
+
 .travel-2{
     grid-area: 2/1/span 1/ span 1;
     margin: 10px;
@@ -486,27 +558,36 @@ h1 {
     border: solid 5px black;
 
 }
-.travel-2,.travel-3{
-    max-height: 250px;
-}
+
 .travel-2 img,.travel-3 img{
     object-fit: cover;
-    max-height: 250px;
-    min-height: 300px;
-    max-width: 200px;
 }
 
 .travel-4{
     grid-area: 4/1/span 1/ span 2;
     text-align: center;
 }
+.travel-4 h3{
+    font-weight: bold;
+    margin: 30px 0px 20px 0px;
+    padding: 0px;
+}
 .travel-5{
     grid-area: 5/1/span 1/ span 2;
     text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    margin-top: 20px;
 }
 .travel-6{
     grid-area: 6/1/span 1/ span 2;
     text-decoration: underline;
+}
+
+.travel-6 h3{
+    font-weight: bold;
+    margin: 30px 0px 20px 0px;
+    padding: 0px;
 }
 .travel-grid{
     grid-area: 8/1/span 1/ span 2;
@@ -533,8 +614,10 @@ h1 {
 
 .travel-grid figcaption{
     max-width: 200px;
-    padding: 10px 0 40px 0;
+    padding: 30px 0 40px 0;
     text-align: center;
+    margin-bottom: 10px;
+    margin-top: 30px;
 }
 
 /* FINAL PROJECT */
