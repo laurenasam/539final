@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pets</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,400i,700">
+
+    <title>Common Class Project</title>
+</head>
+
+<body>
+    <div id="header">
+        <div class="gradient-border">
+    <img src="images/ccp.png" width="100" height="100" alt="Logo">
+    </div>
+    <button id="hamburger">&#9776; Menu</button>
+    <nav id="nav-menu" class="hidden">
+        <ul>
+            <li><a href="home.html"> <button>Home 🏠</button></a></li>
+            <li><a href="index.html">   <button>Pets 🐶</button></a></li>
+            <li><a href="recipes.html">   <button>Recipes 👩‍🍳</button></a></li>
+            <li><a href="travel.html">   <button>Travel ✈️</button></a></li>
+        </ul>
+       
+    </nav>
+    </div>
+
+    <header>
+        <div class="container">
+            <div class="typewriter">Common Class Project</div>
+          </div>
+    </header>
+
+
+    <main>
+        <section>
+            <h2>The Project</h2>
+            <p>The Common Class Project is a student-sourced collection
+                of recipes, pets, and travel content by masters students in SI 539 Web Design at the University of Michigan.
+            This website is a final project that utilizes HTML, advanced CSS, and javascript. </p>
+        </section>
+
+        <section>
+            <h2>About Me</h2>
+            <img src="images/me.jpg" width:"200" height="200">
+            <p>My name is Lauren Asam and I am a masters student at the University of Michigan School of Information. I am currently pursuing a Masters of Science in Information with a specialization in Data Science. </p>
+        </section>
+
+        <section>
+            <h2>Contact Me</h2>
+            <p>Feel free to contact me for any inquiries or questions.</p>
+        </section>
+        <form id="contactForm" onsubmit="submitForm(event)">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+    
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Common Class Project. All rights reserved.</p>
+    </footer>
+
+</body>
+<script src="script.js"></script>
+</html>
