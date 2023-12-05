@@ -1,4 +1,12 @@
-
+#image {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+  height: 200px;
+  width: 200px;
+}
+#image.fade {
+  opacity: 0;
+}
 
 /* Contact Button */
 #contactForm button[type="submit"] {
@@ -257,6 +265,8 @@ text-decoration: underline;
 .pet-1 img{
     border: solid 5px black;
     border-radius: 20px;
+    width: 100%;
+    object-fit: cover;
 }
 
 .pet-4 img, .pet-5 img,.pet-6 video, .pet-6 img,.pet-7 img{
@@ -882,11 +892,13 @@ h1 {
     }
   
     .pet-1 img {
-      max-width: 1000px;
+      width: 100%;
+      object-fit: cover;
       border: solid 5px black;
       border-radius: 20px;
     }
   
+
     .pet-4 img,
     .pet-5 img,
     .pet-6 video,
@@ -902,6 +914,7 @@ h1 {
       object-fit: cover;
     }
   
+    
     .pet-1 {
       text-align: center;
       grid-area: 1/1/span 1/span all;
